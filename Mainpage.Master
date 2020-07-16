@@ -1,0 +1,36 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Mainpage.master.cs" Inherits="Homepage.Mainpage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+
+
+        <asp:Label ID="Lblbookshop" runat="server" Text="Online Book Shop" BorderStyle="None" Font-Bold="True" Font-Names="HP Simplified Light" ForeColor="#FFFF99" BackColor="Red" Font-Size="XX-Large"></asp:Label>
+        <br />
+        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Body.aspx">About</asp:HyperLink>  &nbsp;|  <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Body.aspx">Home</asp:HyperLink> 
+
+        &nbsp;|
+        <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/Body.aspx">Contact Us</asp:HyperLink>
+
+        &nbsp;
+        <div>
+            <br />
+            <br />
+            <br />
+            <br />
+        </div>
+
+
+        <asp:Label ID="Lblcopyright" runat="server" Text="@Copyrights Reserved" Font-Bold="True" Font-Names="HP Simplified Light" ForeColor="Lime"></asp:Label>
+
+    </form>
+</body>
+</html>
